@@ -1,7 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import 'bootstrap-icons/font/bootstrap-icons.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html, body, #app {
   @apply w-full h-full
+}
+
+* {
+  font-family: 'Roboto', 'sans-serif';
+}
+
+@layer components {
+  .input {
+    @apply px-3 py-4 border border-gray-200 rounded-md;
+  }
+
+  .button {
+    @apply py-3 text-white bg-rose-600 rounded-full;
+  }
+
+  .divider {
+    @apply w-full border-b border-gray-200
+  }
+
+  .link {
+    @apply text-blue-400 underline
+  }
 }
